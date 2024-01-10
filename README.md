@@ -25,8 +25,7 @@ Robson Niemeyer
 │   ├── _var.scss
 │   └── style.scss
 ├── styles/
-│   ├── style.css
-│   └── style.css.map
+│   └── style.css
 ├── LICENSE
 ├── README.md
 └── index.html
