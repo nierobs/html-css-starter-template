@@ -39,8 +39,8 @@ html {
 }
 
 body {
-  background-color: hsl(225, 12.5%, 93.75%);
-  color: hsl(225, 12.5%, 12.5%);
+  background-color: hsl(225, 12.5%, 6.25%);
+  color: hsl(225, 12.5%, 100%);
   font: 1rem / 1.6818 "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   min-height: 100%;
@@ -51,17 +51,17 @@ body {
 
 ul {
   list-style: none;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 ul:last-of-type {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 li:last-of-type {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .container {
@@ -88,7 +88,7 @@ li:last-of-type {
 }
 
 hr {
-  border-bottom: 0.25rem solid hsl(225, 12.5%, 75%);
+  border-bottom: 0.25rem solid hsl(225, 12.5%, 25%);
   margin: 1rem 0;
   width: 4rem;
 }
@@ -99,7 +99,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {
   line-height: 1.1892;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .huge {
@@ -122,17 +122,17 @@ h3, .h3 {
 }
 
 p {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 p:last-of-type {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 p.small {
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 p.small:last-of-type {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .small {
@@ -141,7 +141,7 @@ p.small:last-of-type {
 }
 
 a {
-  color: hsl(225, 100%, 50%);
+  color: rgb(33, 179, 84);
   text-decoration: none;
   transition: color 330ms ease-out;
 }
@@ -231,8 +231,8 @@ em,
     max-width: 800px;
   }
   .card {
-    background-color: hsl(225, 12.5%, 100%);
-    border: 0.0625rem solid hsl(225, 12.5%, 75%);
+    background-color: hsl(225, 12.5%, 12.5%);
+    border: 0.0625rem solid hsl(225, 12.5%, 25%);
     border-radius: 0.5rem;
     padding: 2rem;
   }
@@ -246,7 +246,7 @@ em,
     text-align: left;
   }
   a:hover {
-    color: #4070ff;
+    color: #39db72;
   }
 }
 @media only screen and (min-width: 1280px) {
