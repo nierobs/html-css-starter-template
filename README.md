@@ -7,21 +7,21 @@
 ## Directory structure
 
 ```bash
-./
-├── fonts/
+.
+├── fonts
 │   ├── BebasNeue-Regular.ttf
 │   ├── OpenSans-Italic-VariableFont_wdth,wght.ttf
 │   └── OpenSans-VariableFont_wdth,wght.ttf
-├── images/
+├── images
 │   ├── apple-touch-icon.webp
 │   ├── favicon.png
 │   └── open-graph.webp
-├── scss/
+├── scss
 │   ├── _custom.scss
 │   ├── _global.scss
 │   ├── _var.scss
 │   └── style.scss
-├── styles/
+├── styles
 │   └── style.css
 ├── LICENSE
 ├── README.md
