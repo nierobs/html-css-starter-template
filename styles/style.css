@@ -79,8 +79,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 p,
-ul,
-li {
+ul {
     margin-bottom: 1rem;
 } 
 
@@ -89,8 +88,7 @@ h2:last-child, .h2:last-child,
 h3:last-child, .h3:last-child,
 h4:last-child, .h4:last-child,
 p:last-child,
-ul:last-child,
-li:last-child {
+ul:last-child {
     margin-bottom: 0;
 }
 
