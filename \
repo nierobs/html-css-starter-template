@@ -17,9 +17,9 @@
 }
 
 :root {
-    --stop-color: hsl(6, 75%, 43.75%);
-    --caution-color: hsl(54, 75%, 37.5%);
-    --go-color: hsl(141, 75%, 37.5%);
+    --stop-color: hsl(6, 87.5%, 43.75%);
+    --caution-color: hsl(54, 87.5%, 43.75%);
+    --go-color: hsl(141, 87.5%, 43.75%);
 
     --background-color: hsl(222, 12.5%, 96.875%);
     --text-color: hsl(222, 12.5%, 18.75%);
@@ -58,8 +58,8 @@ body {
 }
 
 .noscript {
-    background-color: var(--caution-color);
-    color: var(--text-color-on-dark);
+    background-color: var(--go-color);
+    color: var(--text-color);
     padding: 0.25rem;
 }
 
