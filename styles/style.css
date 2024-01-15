@@ -16,6 +16,17 @@
     src: local("Open Sans"), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
+:root {
+    --background-color: hsl(225, 12.5%, 96.875%);
+    --text-color: hsl(225, 12.5%, 18.75%);
+    --text-color-on-dark: hsl(225, 100%, 100%);
+    --card-background-color: hsl(225, 12.5%, 100%);
+    --card-border-color: hsl(225, 12.5%, 98.4375%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 98.4375%);
+    --link-color: hsl(225, 100%, 50%);
+    --link-color-on-hover: hsl(225, 100%, 43.75%);
+    --stop-color: hsl(0, 87.5%, 43.75%);
+}
+
 *,
 ::after,
 ::before {
@@ -34,16 +45,16 @@ html {
 }
 
 body {
-    background-color: hsl(225, 12.5%, 96.875%);
-    color: hsl(225, 12.5%, 18.75%);
+    background-color: var(--background-color);
+    color: var(--text-color);
     font: 400 1.125rem/1.3195 "Open Sans", Arial, Helvetica, sans-serif;
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
 
 .noscript {
-    background-color: hsl(0, 87.5%, 43.75%);
-    color: hsl(225, 100%, 100%);
+    background-color: var(--stop-color);
+    color: var(--text-color-on-dark);
     padding: 0.25rem;
 }
 
@@ -111,13 +122,13 @@ p {
 }
 
 a {
-    color: hsl(225, 100%, 50%);
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.3295s ease-out;
 }
 
 a:hover {
-    color: hsl(225, 100%, 43.75%);
+    color: var(--link-color-on-hover);
 } 
 
 ul {
@@ -143,9 +154,9 @@ strong {
 }
 
 .card {
-    background-color: hsl(225, 12.5%, 100%);
+    background-color: var(--card-background-color);
     border: .0625rem solid;
-    border-color:  hsl(225, 12.5%, 98.4375%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 98.4375%);
+    border-color: var(--card-border-color);
     border-radius: 0.5rem;
     padding: 1rem;
 }
