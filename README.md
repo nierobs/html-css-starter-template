@@ -1,4 +1,4 @@
-# Minimalist HTML and CSS files
+# Minimalist HTML and CSS template
 
 **Author:** Robson Niemeyer  
 **Repository:** [https://github.com/nierobs/html-css](https://github.com/nierobs/html-css)  
