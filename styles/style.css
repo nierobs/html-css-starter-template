@@ -17,20 +17,20 @@
 }
 
 :root {
-    --stop-color: hsl(6, 75%, 43.75%);
-    --caution-color: hsl(54, 75%, 37.5%);
-    --go-color: hsl(141, 75%, 37.5%);
-    --message-color: hsl(222, 75%, 37.5%);
+    --stop-color: hsl(6, 75%, 40%);
+    --caution-color: hsl(54, 75%, 40%);
+    --proceed-color: hsl(141, 75%, 40%);
+    --message-color: hsl(222, 75%, 40%);
 
-    --background-color: hsl(222, 12.5%, 96.875%);
-    --text-color: hsl(222, 12.5%, 18.75%);
-    --text-color-on-dark: hsl(222, 100%, 100%);
+    --background-color: hsl(222, 12.5%, 90%);
+    --text-color: hsl(222, 12.5%, 20%);
+    --text-on-dark-color: hsl(222, 100%, 100%);
 
     --card-background-color: hsl(222, 12.5%, 100%);
-    --card-border-color: hsl(222, 12.5%, 98.4375%) hsl(222, 12.5%, 95.3125%) hsl(222, 12.5%, 95.3125%) hsl(222, 12.5%, 98.4375%);
+    --card-border-color: hsl(222, 12.5%, 92.5%) hsl(222, 12.5%, 87.5%) hsl(222, 12.5%, 87.5%) hsl(222, 12.5%, 92.5%);
 
     --link-color: hsl(222, 100%, 50%);
-    --link-color-on-hover: hsl(222, 75%, 43.75%);
+    --link-color-on-hover: hsl(222, 100%, 40%);
 }
 
 *,
@@ -61,17 +61,13 @@ body {
 .alert {
     padding: 0.25rem 1rem;
     background-color: var(--caution-color);
-    color: var(--text-color-on-dark);
+    color: var(--text-on-dark-color);
 }
 
 header,
 footer {
-    padding: 2rem 1rem;
-}
-
-main {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 h1, .h1,
@@ -181,7 +177,7 @@ strong, .font-bold {
 
 .card {
     background-color: var(--card-background-color);
-    border: .0625rem solid;
+    border: 0.0625rem solid;
     border-color: var(--card-border-color);
     border-radius: 0.5rem;
     padding: 1rem;
