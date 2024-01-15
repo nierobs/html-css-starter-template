@@ -20,6 +20,7 @@
     --stop-color: hsl(6, 75%, 43.75%);
     --caution-color: hsl(54, 75%, 37.5%);
     --go-color: hsl(141, 75%, 37.5%);
+    --message-color: hsl(222, 75%, 37.5%);
 
     --background-color: hsl(222, 12.5%, 96.875%);
     --text-color: hsl(222, 12.5%, 18.75%);
@@ -29,7 +30,7 @@
     --card-border-color: hsl(222, 12.5%, 98.4375%) hsl(222, 12.5%, 95.3125%) hsl(222, 12.5%, 95.3125%) hsl(222, 12.5%, 98.4375%);
 
     --link-color: hsl(222, 100%, 50%);
-    --link-color-on-hover: hsl(222, 100%, 43.75%);
+    --link-color-on-hover: hsl(222, 75%, 43.75%);
 }
 
 *,
@@ -59,11 +60,13 @@ body {
 
 .alert {
     padding: 0.25rem 1rem;
+    background-color: var(--stop-color);
 }
 
 .stop,
 .caution,
-.go {
+.go,
+.message {
     color: var(--text-color-on-dark);
 }
 
@@ -77,6 +80,10 @@ body {
 
 .go {
     background-color: var(--go-color) !important;
+}
+
+.message {
+    background-color: var(--message-color) !important;
 }
 
 header,
