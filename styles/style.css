@@ -17,14 +17,16 @@
 }
 
 :root {
-    --background-color: hsl(225, 12.5%, 96.875%);
-    --text-color: hsl(225, 12.5%, 18.75%);
-    --text-color-on-dark: hsl(225, 100%, 100%);
-    --card-background-color: hsl(225, 12.5%, 100%);
-    --card-border-color: hsl(225, 12.5%, 98.4375%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 98.4375%);
-    --link-color: hsl(225, 100%, 50%);
-    --link-color-on-hover: hsl(225, 100%, 43.75%);
-    --stop-color: hsl(0, 87.5%, 43.75%);
+    --background-color: hsl(222, 12.5%, 96.875%);
+    --text-color: hsl(222, 12.5%, 18.75%);
+    --text-color-on-dark: hsl(222, 100%, 100%);
+    --card-background-color: hsl(222, 12.5%, 100%);
+    --card-border-color: hsl(222, 12.5%, 98.4375%) hsl(222, 12.5%, 95.3125%) hsl(222, 12.5%, 95.3125%) hsl(222, 12.5%, 98.4375%);
+    --link-color: hsl(222, 100%, 50%);
+    --link-color-on-hover: hsl(222, 100%, 43.75%);
+    --stop-color: hsl(6, 87.5%, 43.75%);
+    --caution-color: hsl(54, 87.5%, 43.75%);
+    --go-color: hsl(141, 87.5%, 43.75%);
 }
 
 *,
