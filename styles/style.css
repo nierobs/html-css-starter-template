@@ -47,7 +47,7 @@ html {
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    font: 400 1.125rem/1.3195 "Open Sans", Arial, Helvetica, sans-serif;
+    font: 400 1.125rem/1.3195em "Open Sans", Arial, Helvetica, sans-serif;
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
@@ -87,6 +87,13 @@ li:last-child {
     margin-bottom: 0;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+    line-height: 1.1487em;
+}
+
 h1, .h1 {
     font-size: 2em;
     font-weight: 800;
@@ -113,7 +120,7 @@ h4, .h4 {
 }
 
 p {
-    line-height: 1.5157;
+    line-height: 1.5157em;
 }
 
 .small {
