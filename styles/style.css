@@ -130,9 +130,13 @@ p {
     line-height: 1.5157em;
 }
 
+blockquote,
+q {
+    quotes: none;
+}
+
 .small {
     font-size: 0.8706em;
-    font-weight: 336;
 }
 
 a {
@@ -149,11 +153,15 @@ ul {
     list-style: none;
 }
 
-.regular {
+.font-light {
+    font-weight: 336;
+}
+
+.font-regular {
     font-weight: 400;
 }
 
-strong, .bold {
+strong, .font-bold {
     font-weight: 673;
 }
 
