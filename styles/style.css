@@ -68,8 +68,13 @@ li {
     margin-bottom: 1rem;
 } 
 
-h1:last-child, .h1:last-child, h2:last-child, .h2:last-child, h3:last-child, .h3:last-child,
-h4:last-child, .h4:last-child, p:last-child, ul:last-child, li:last-child {
+h1:last-child, .h1:last-child,
+h2:last-child, .h2:last-child,
+h3:last-child, .h3:last-child,
+h4:last-child, .h4:last-child,
+p:last-child,
+ul:last-child,
+li:last-child {
     margin-bottom: 0;
 }
 
