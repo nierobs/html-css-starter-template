@@ -39,8 +39,6 @@ body {
     font: 400 1.125rem/1.3195 "Open Sans", Arial, Helvetica, sans-serif;
     min-height: 100%;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .noscript {
