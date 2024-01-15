@@ -34,16 +34,16 @@ html {
 }
 
 body {
-    background-color: #fff;
-    color: #2b2b33;
+    background-color: hsl(225, 12.5%, 96.875%);
+    color: hsl(225, 12.5%, 18.75%);
     font: 400 1.125rem/1.3195 "Open Sans", Arial, Helvetica, sans-serif;
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
 
 .noscript {
-    background-color: #df0000;
-    color: #fff;
+    background-color: hsl(0, 87.5%, 43.75%);
+    color: hsl(225, 100%, 100%);
     padding: 0.25rem;
 }
 
@@ -111,13 +111,13 @@ p {
 }
 
 a {
-    color: #004fff;
+    color: hsl(225, 100%, 50%);
     text-decoration: none;
     transition: color 0.3295s ease-out;
 }
 
 a:hover {
-    color: #003fbf;
+    color: hsl(225, 100%, 43.75%);
 } 
 
 ul {
@@ -143,8 +143,9 @@ strong {
 }
 
 .card {
-    background-color: #f3f3fb;
-    border: 0.0625rem solid #ebebf3;
+    background-color: hsl(225, 12.5%, 100%);
+    border: .0625rem solid;
+    border-color:  hsl(225, 12.5%, 98.4375%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 95.3125%) hsl(225, 12.5%, 98.4375%);
     border-radius: 0.5rem;
     padding: 1rem;
 }
