@@ -60,30 +60,8 @@ body {
 
 .alert {
     padding: 0.25rem 1rem;
-    background-color: var(--stop-color);
-}
-
-.stop,
-.caution,
-.go,
-.message {
+    background-color: var(--caution-color);
     color: var(--text-color-on-dark);
-}
-
-.stop {
-    background-color: var(--stop-color) !important;
-}
-
-.caution {
-    background-color: var(--caution-color) !important;
-}
-
-.go {
-    background-color: var(--go-color) !important;
-}
-
-.message {
-    background-color: var(--message-color) !important;
 }
 
 header,
