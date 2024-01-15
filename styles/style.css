@@ -57,10 +57,26 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-.noscript {
-    background-color: var(--caution-color);
-    color: var(--text-color-on-dark);
+.alert {
     padding: 0.25rem 1rem;
+}
+
+.stop,
+.caution,
+.go {
+    color: var(--text-color-on-dark);
+}
+
+.stop {
+    background-color: var(--stop-color);
+}
+
+.caution {
+    background-color: var(--caution-color);
+}
+
+.go {
+    background-color: var(--go-color);
 }
 
 header,
