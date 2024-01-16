@@ -17,24 +17,23 @@
 }
 
 :root {
-    --stop-color: hsl(6, 75%, 40%);
-    --caution-color: hsl(54, 75%, 40%);
-    --proceed-color: hsl(141, 75%, 40%);
-    --message-color: hsl(234, 75%, 40%);
+    --info-color: hsl(216, 62.5%, 43.75%);
+    --stop-color: hsl(6, 62.5%, 50%);
+    --caution-color: hsl(42, 62.5%, 43.75%);
+    --proceed-color: hsl(141, 62.5%, 37.5%);
 
     --background-color: hsl(234, 12.5%, 93.75%);;
     --text-color: hsl(234, 12.5%, 18.75%);
     --text-on-dark-color: hsl(234, 12.5%, 100%);
+    --link-color: hsl(234, 100%, 50%);
+    --link-on-hover-color: hsl(234, 100%, 62.5%);
 
     --card-background-color: hsl(234, 12.5%, 100%);
-    --border-color: hsl(234, 12.5%, 87.5%);
 
-    --shadow-s: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.0625);
-    --shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
-    --shadow-l: 0.25rem 0.5rem 1rem hsla(0, 0%, 0%, 0.0625);
+    --border: 0.0625rem solid hsl(234, 12.5%, 87.5%);
+    --box-shadow: 0.0625rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+    --text-shadow: 0.03125rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.0625);
 
-    --link-color: hsl(234, 100%, 50%);
-    --link-on-hover-color: hsl(234, 100%, 40%);
 }
 
 *,
@@ -63,16 +62,17 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-.alert {
-    padding: 0.25rem 1rem;
-    background-color: var(--caution-color);
-    color: var(--text-on-dark-color);
-}
-
 header,
 footer {
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+
+.alert {
+    background-color: var(--caution-color);
+    color: var(--text-on-dark-color);
+    font-weight: 635;
+    padding: 0.25rem 1rem;
 }
 
 .container {
@@ -86,13 +86,13 @@ footer {
 .card {
     background-color: var(--card-background-color);
     border-radius: 0.5rem;
-    box-shadow: var(--shadow);
+    box-shadow: var(--box-shadow);
     padding: 2rem 1rem;
 }
 
 hr {
     border-width: 0 0 0.0625rem 0;
-    border-bottom: 0.0625rem solid var(--border-color);
+    border-bottom: var(--border);
     margin: 1rem 0;
     width: 4rem;
 }
