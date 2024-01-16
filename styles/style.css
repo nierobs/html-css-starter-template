@@ -109,19 +109,19 @@ ul:last-child {
 h1, .h1 {
     font-size: 2.0582rem;
     font-weight: 800;
-    margin-bottom: 1;
+    margin-bottom: 1rem;
 }
 
 h2, .h2 {
     font-size: 1.618rem;
     font-weight: 635;
-    margin-bottom: 1;
+    margin-bottom: 1rem;
 }
 
 h3, .h3 {
     font-size: 1.272rem;
     font-weight: 504;
-    margin-bottom: 1;
+    margin-bottom: 1rem;
 }
 
 p {
