@@ -22,7 +22,7 @@
     --caution-color: hsl(42, 62.5%, 43.75%);
     --proceed-color: hsl(141, 62.5%, 37.5%);
 
-    --background-color: hsl(234, 12.5%, 93.75%);;
+    --background-color: hsl(234, 12.5%, 93.75%);
     --text-color: hsl(234, 12.5%, 18.75%);
     --text-on-dark-color: hsl(234, 12.5%, 100%);
     --link-color: hsl(234, 100%, 50%);
@@ -78,7 +78,7 @@ footer {
 .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 75rem;
+    max-width: 1536px;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -172,8 +172,6 @@ q {
     text-align: center;
 }
 
-/* Tablet */
-@media only screen and (min-width: 50rem) {}
+@media only screen and (min-width: 769px) {}
 
-/* Desktop */
-@media only screen and (min-width: 75rem) {}
+@media only screen and (min-width: 1153px) {}
