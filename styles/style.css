@@ -33,7 +33,6 @@
     --border: 0.0625rem solid hsl(234, 12.5%, 87.5%);
     --box-shadow: 0.0625rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
     --text-shadow: 0.03125rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.0625);
-
 }
 
 *,
@@ -172,6 +171,6 @@ q {
     text-align: center;
 }
 
+@media only screen and (min-width: 385px) {}
 @media only screen and (min-width: 769px) {}
-
 @media only screen and (min-width: 1153px) {}
