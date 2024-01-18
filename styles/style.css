@@ -156,10 +156,6 @@ p {
     margin-bottom: 1rem;
 }
 
-.small {
-    font-size: var(--size-small);
-}
-
 a {
     color: var(--color-link-1);
     text-decoration: none;
@@ -175,16 +171,20 @@ q {
     quotes: none;
 }
 
-.font-light {
+.small {
+    font-size: var(--size-small);
+}
+
+.weight-light {
     font-weight: var(--weight-light);
 }
 
-.font-medium {
+.weight-medium {
     font-weight: var(--weight-medium);
 }
 
 strong,
-.font-bold {
+.weight-bold {
     font-weight: var(--weight-bold);
 }
 
