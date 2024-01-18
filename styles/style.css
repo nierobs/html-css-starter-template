@@ -4,7 +4,7 @@
     font-stretch: 75% 100%;
     font-style: normal;
     font-weight: 300 800;
-    src: local("Open Sans"), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+    src: local(Open Sans), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     font-stretch: 75% 100%;
     font-style: italic;
     font-weight: 300 800;
-    src: local("Open Sans"), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+    src: local(Open Sans), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 @font-face {
@@ -21,7 +21,7 @@
     font-family: "Dancing Script";
     font-style: normal;
     font-weight: 400 700;
-    src: local("Dancing Script"), url(../fonts/DancingScript-VariableFont_wght.ttf) format(truetype) tech(variations);
+    src: local(Dancing Script), url(../fonts/DancingScript-VariableFont_wght.ttf) format(truetype) tech(variations);
 }
 
 :root {
@@ -30,10 +30,6 @@
 
     --border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
     --shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
-    --transition: 0.3295s ease-out;
-
-    --font-family-1: "Open Sans", Arial, Helvetica, sans-serif;
-    --font-family-2: "Dancing Script", cursive;
 
     --color-text-1: hsl(234, 12.5%, 18.75%);
     --color-text-2: hsl(234, 12.5%, 37.5%);
@@ -48,6 +44,9 @@
     --color-caution: hsl(42, 62.5%, 43.75%);
     --color-proceed: hsl(141, 62.5%, 37.5%);
 
+    --font-family-sans: "Open Sans", Arial, Helvetica, sans-serif;
+    --font-family-handwriting: "Dancing Script", cursive;
+
     --size-h1: 1.618rem;
     --size-h2: 1.272rem;
     --size-small: 0.7862rem;
@@ -58,6 +57,8 @@
     --weight-light: 314;
     --weight-medium: 509;
     --weight-bold: 647;
+
+    --transition: 0.33s ease-out;
 }
 
 *,
@@ -81,15 +82,14 @@ html {
 body {
     background-color: var(--background-2);
     color: var(--color-text-1);
-    font: 400 1rem / var(--height-1) var(--font-family-1);
+    font: 400 1rem / var(--height-1) var(--font-family-sans);
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
 
 header,
 footer {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 section {
@@ -104,11 +104,9 @@ section {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 1440px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem;
 }
 
 .card {
@@ -129,7 +127,7 @@ ul {
 }
 
 .handwriting {
-    font-family: var(--font-family-2);
+    font-family: var(--font-family-handwriting);
 }
 
 h1, .h1 {
