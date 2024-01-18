@@ -25,24 +25,39 @@
 }
 
 :root {
-    --info-color: hsl(216, 62.5%, 43.75%);
-    --stop-color: hsl(6, 62.5%, 50%);
-    --caution-color: hsl(42, 62.5%, 43.75%);
-    --proceed-color: hsl(141, 62.5%, 37.5%);
+    --background-1: hsl(234, 12.5%, 100%);
+    --background-2: hsl(234, 12.5%, 93.75%);
 
-    --background-color: hsl(234, 12.5%, 93.75%);
-    --text-color: hsl(234, 12.5%, 18.75%);
-    --text-secondary-color: hsl(234, 12.5%, 37.5%);
-    --text-on-dark-color: hsl(234, 12.5%, 100%);
-    --link-color: hsl(234, 100%, 50%);
-    --link-on-hover-color: hsl(234, 100%, 62.5%);
-
-    --card-background-color: hsl(234, 12.5%, 100%);
-
-    --border-color: hsl(234, 12.5%, 81.25%);
     --border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
-    --box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
-    --text-shadow: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.0625);
+    --shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+    --transition: 0.3295s ease-out;
+
+    --font-family-1: "Open Sans", Arial, Helvetica, sans-serif;
+    --font-family-2: "Dancing Script", cursive;
+
+    --color-text-1: hsl(234, 12.5%, 18.75%);
+    --color-text-2: hsl(234, 12.5%, 37.5%);
+
+    --color-link-1: hsl(234, 100%, 50%);
+    --color-link-1-hover: hsl(234, 100%, 62.5%);
+    --color-link-2: hsl(234, 12.5%, 37.5%);
+    --color-link-2-hover: hsl(234, 12.5%, 50%);
+
+    --color-info: hsl(216, 62.5%, 43.75%);
+    --color-stop: hsl(6, 62.5%, 50%);
+    --color-caution: hsl(42, 62.5%, 43.75%);
+    --color-proceed: hsl(141, 62.5%, 37.5%);
+
+    --size-h1: 1.618rem;
+    --size-h2: 1.272rem;
+    --size-small: 0.7862rem;
+
+    --height-1: 1.618;
+    --height-2: 1.272;
+
+    --weight-light: 314;
+    --weight-medium: 509;
+    --weight-bold: 647;
 }
 
 *,
@@ -64,9 +79,9 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font: 400 1rem/1.272 "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: var(--background-2);
+    color: var(--color-text-1);
+    font: 400 1rem / var(--height-1) var(--font-family-1);
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
@@ -82,9 +97,9 @@ section {
 }
 
 .alert {
-    background-color: var(--caution-color);
-    color: var(--text-on-dark-color);
-    font-weight: 635;
+    background-color: var(--color-caution);
+    color: #fff;
+    font-weight: var(--weight-bold);
     padding: 0.25rem 1rem;
 }
 
@@ -97,9 +112,9 @@ section {
 }
 
 .card {
-    background-color: var(--card-background-color);
+    background-color: var(--background-1);
     border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow);
     padding: 1rem;
 }
 
@@ -113,48 +128,46 @@ ul {
     margin-bottom: 1rem;
 }
 
-li {
-    line-height: 1.618;
-}
-
 .handwriting {
-    font-family: "Dancing Script", cursive;
+    font-family: var(--font-family-2);
 }
 
 h1, .h1 {
-    font-size: 1.618rem;
-    font-weight: 800;
+    font-size: var(--size-h1);
+    font-weight: var(--weight-bold);
+    line-height: var(--height-2);
     margin-bottom: 1rem;
 }
 
 h2, .h2 {
-    font-size: 1.272rem;
-    font-weight: 635;
+    font-size: var(--size-h2);
+    font-weight: var(--weight-bold);
+    line-height: var(--height-2);
     margin-bottom: 1rem;
 }
 
 h3, .h3 {
-    font-weight: 504;
+    font-weight: var(--weight-bold);
+    line-height: var(--height-2);
     margin-bottom: 1rem;
 }
 
 p {
-    line-height: 1.618;
     margin-bottom: 1rem;
 }
 
 .small {
-    font-size: 0.7862rem;
+    font-size: var(--size-small);
 }
 
 a {
-    color: var(--link-color);
+    color: var(--color-link-1);
     text-decoration: none;
-    transition: color 0.3295s ease-out;
+    transition: color var(--transition);
 }
 
 a:hover {
-    color: var(--link-on-hover-color);
+    color: var(--color-link-1-hover);
 }
 
 blockquote,
@@ -163,16 +176,16 @@ q {
 }
 
 .font-light {
-    font-weight: 317;
+    font-weight: var(--weight-light);
 }
 
 .font-medium {
-    font-weight: 504;
+    font-weight: var(--weight-medium);
 }
 
 strong,
 .font-bold {
-    font-weight: 635;
+    font-weight: var(--weight-bold);
 }
 
 .uppercase {
