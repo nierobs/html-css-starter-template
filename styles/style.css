@@ -29,6 +29,10 @@
     --background-2: hsl(234, 12.5%, 93.75%);
 
     --border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
+
+    --border-radius-1: 0.5rem;
+    --border-radius-2: 0.25rem;
+
     --shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
 
     --color-text-1: hsl(234, 12.5%, 18.75%);
@@ -111,7 +115,7 @@ section {
 
 .card {
     background-color: var(--background-1);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-1);
     box-shadow: var(--shadow);
     padding: 1rem;
 }
