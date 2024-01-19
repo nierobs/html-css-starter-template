@@ -25,41 +25,41 @@
 }
 
 :root {
-    --background-1: hsl(234, 12.5%, 100%);
-    --background-2: hsl(234, 12.5%, 93.75%);
+    --background-primary: hsl(234, 12.5%, 93.75%);
+    --background-secondary: hsl(234, 12.5%, 100%);
 
-    --border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
-
+    --border-color: hsl(234, 12.5%, 81.25%);
+    --border: 0.0625rem solid var(--border-color);
     --border-radius: 0.5rem;
 
-    --shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+    --box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
 
-    --color-text-1: hsl(234, 12.5%, 18.75%);
-    --color-text-2: hsl(234, 12.5%, 37.5%);
+    --color-text-primary: hsl(234, 12.5%, 18.75%);
+    --color-text-secondary: hsl(234, 12.5%, 37.5%);
 
-    --color-link-1: hsl(210, 93.75%, 50%);
-    --color-link-1-hover: hsl(210, 93.75%, 62.5%);
-    --color-link-2: hsl(234, 12.5%, 37.5%);
-    --color-link-2-hover: hsl(234, 12.5%, 50%);
+    --color-link-primary: hsl(210, 93.75%, 50%);
+    --color-link-primary-hover: hsl(210, 93.75%, 62.5%);
+    --color-link-secondary: hsl(234, 12.5%, 37.5%);
+    --color-link-secondary-hover: hsl(234, 12.5%, 50%);
 
     --color-info: hsl(210, 43.75%, 50%);
     --color-stop: hsl(354, 43.75%, 56.25%);
     --color-caution: hsl(42, 43.75%, 50%);
-    --color-proceed: hsl(147, 43.75%, 43.75%);
+    --color-proceed: hsl(144, 43.75%, 43.75%);
 
-    --font-family-sans: "Open Sans", Arial, Helvetica, sans-serif;
-    --font-family-handwriting: "Dancing Script", cursive;
+    --font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
+    --font-family-secondary: "Dancing Script", cursive;
 
-    --size-h1: 1.618rem;
-    --size-h2: 1.272rem;
-    --size-small: 0.7862rem;
+    --font-size-h1: 1.618rem;
+    --font-size-h2: 1.272rem;
+    --font-size-small: 0.7862rem;
 
-    --height-1: 1.618;
-    --height-2: 1.272;
+    --font-weight-light: 314;
+    --font-weight-medium: 509;
+    --font-weight-bold: 647;
 
-    --weight-light: 314;
-    --weight-medium: 509;
-    --weight-bold: 647;
+    --line-height-primary: 1.618;
+    --line-height-secondary: 1.272;
 
     --transition: 0.33s ease-out;
 }
@@ -83,9 +83,9 @@ html {
 }
 
 body {
-    background-color: var(--background-2);
-    color: var(--color-text-1);
-    font: 400 1rem / var(--height-1) var(--font-family-sans);
+    background-color: var(--background-primary);
+    color: var(--color-text-primary);
+    font: 400 1rem / var(--line-height-primary) var(--font-family-primary);
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
@@ -102,7 +102,7 @@ section {
 .alert {
     background-color: var(--color-caution);
     color: #fff;
-    font-weight: var(--weight-bold);
+    font-weight: var(--font-weight-bold);
     padding: 0.25rem 1rem;
 }
 
@@ -113,9 +113,9 @@ section {
 }
 
 .card {
-    background-color: var(--background-1);
+    background-color: var(--background-secondary);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--box-shadow);
     padding: 1rem;
 }
 
@@ -130,26 +130,26 @@ ul {
 }
 
 .handwriting {
-    font-family: var(--font-family-handwriting);
+    font-family: var(--font-family-secondary);
 }
 
 h1, .h1 {
-    font-size: var(--size-h1);
-    font-weight: var(--weight-bold);
-    line-height: var(--height-2);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-secondary);
     margin-bottom: 1rem;
 }
 
 h2, .h2 {
-    font-size: var(--size-h2);
-    font-weight: var(--weight-bold);
-    line-height: var(--height-2);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-secondary);
     margin-bottom: 1rem;
 }
 
 h3, .h3 {
-    font-weight: var(--weight-bold);
-    line-height: var(--height-2);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-secondary);
     margin-bottom: 1rem;
 }
 
@@ -158,13 +158,13 @@ p {
 }
 
 a {
-    color: var(--color-link-1);
+    color: var(--color-link-primary);
     text-decoration: none;
     transition: color var(--transition);
 }
 
 a:hover {
-    color: var(--color-link-1-hover);
+    color: var(--color-link-primary-hover);
 }
 
 blockquote,
@@ -173,20 +173,20 @@ q {
 }
 
 .small {
-    font-size: var(--size-small);
+    font-size: var(--font-size-small);
 }
 
 .weight-light {
-    font-weight: var(--weight-light);
+    font-weight: var(--font-weight-light);
 }
 
 .weight-medium {
-    font-weight: var(--weight-medium);
+    font-weight: var(--font-weight-medium);
 }
 
 strong,
 .weight-bold {
-    font-weight: var(--weight-bold);
+    font-weight: var(--font-weight-bold);
 }
 
 .uppercase {
