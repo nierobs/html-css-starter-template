@@ -1,11 +1,11 @@
 :root {
     /* background-color */
-    --bgc__primary: hsl(240, 17.1875%, 96.875%);
+    --bgc__primary: hsl(240, 17.1875%, 95.3125%);
     --bgc__secondary: #fff;
     --bgc__alert: hsl(42, 43.75%, 50%);
 
     /* border-color */
-    --bdc: hsl(234, 17.1875%, 84.375%);
+    --bdc: hsl(234, 17.1875%, 85.9375%);
 
     /* border-radius */
     --bdrs: 0.5rem;
