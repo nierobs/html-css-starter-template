@@ -96,6 +96,7 @@ p {
     margin: 1rem 0;
 }
 
+label,
 .small {
     font-size: var(--fz__small);
 }
