@@ -4,6 +4,15 @@
     --bgc__secondary: #fff;
     --bgc__alert: hsl(42, 43.75%, 50%);
 
+    /* border-color */
+    --bdc: hsl(234, 17.1875%, 84.375%);
+
+    /* border-radius */
+    --bdrs: 0.5rem;
+
+    /* box-shadow */
+    --bxsh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+
     /* color */
     --c: hsl(240, 17.1875%, 10.9375%);
     --c__link: hsl(225, 84.375%, 46.875%);
@@ -17,12 +26,6 @@
     /* line-height */
     --lh__primary: 1.6818;
     --lh__secondary: 1.1892;
-
-    /* border-radius */
-    --bdrs: 0.5rem;
-
-    /* box-shadow */
-    --bxsh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
 
     /* transition */
     --trs: 250ms ease-out;
