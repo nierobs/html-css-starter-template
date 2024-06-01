@@ -14,7 +14,8 @@
     --bxsh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
 
     /* color */
-    --c: hsl(240, 17.1875%, 10.9375%);
+    --c__primary: hsl(240, 17.1875%, 10.9375%);
+    --c__secondary: hsl(240, 17.1875%, 17.1875%);
     --c__link: hsl(225, 84.375%, 46.875%);
     --c__link-hover: hsl(225, 84.375%, 53.125%);
 
@@ -51,7 +52,7 @@ html {
 
 body {
     background-color: var(--bgc__primary);
-    color: var(--c);
+    color: var(--c__primary);
     font: 400 1rem / var(--lh__primary) sans-serif;
     min-height: 100%;
     text-rendering: optimizeLegibility;
