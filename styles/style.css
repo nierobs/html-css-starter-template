@@ -88,7 +88,7 @@ alert {
     background-color: var(--card__bg);
     border-radius: var(--card__rs);
     box-shadow: var(--card__sh);
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
 }
 
 h1 {
@@ -160,6 +160,10 @@ strong {
     main,
     footer {
         padding: 0 1rem;
+    }
+
+    .card {
+        padding: 4rem 1rem;
     }
 }
 
