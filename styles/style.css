@@ -7,22 +7,6 @@
   src: local(Archivo), url(../fonts/Archivo-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
-@font-face {
-  font-display: swap;
-  font-family: Jost;
-  font-style: normal;
-  font-weight: 100 900;
-  src: local(Jost), url(../fonts/Jost-VariableFont_wght.ttf) format(truetype) tech(variations);
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Jost;
-  font-style: italic;
-  font-weight: 100 900;
-  src: local(Jost), url(../fonts/Jost-Italic-VariableFont_wght.ttf) format(truetype) tech(variations);
-}
-
 :root {
     --alert__bg: hsl(42, 43.75%, 50%);
 
@@ -34,7 +18,7 @@
     --body__ln: hsl(210, 96.875%, 43.75%);
     --body__ln-hover: hsl(210, 96.875%, 56.25%);
     --body__ln-trs: 250ms ease-out;
-    --body__ff: Jost, sans-serif;
+    --body__ff: sans-serif;
     --body__lh: 1.618;
 
     --card__bg: #fff;
