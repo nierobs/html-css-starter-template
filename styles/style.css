@@ -4,7 +4,7 @@
   font-stretch: 62.5% 125%;
   font-style: normal;
   font-weight: 100 900;
-  src: local(Archivo), url(../fonts/sans-serif/Archivo-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+  src: local(Archivo), url(../fonts/Archivo-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-family: Jost;
   font-style: normal;
   font-weight: 100 900;
-  src: local(Jost), url(../fonts/sans-serif/Jost-VariableFont_wght.ttf) format(truetype) tech(variations);
+  src: local(Jost), url(../fonts/Jost-VariableFont_wght.ttf) format(truetype) tech(variations);
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-family: Jost;
   font-style: italic;
   font-weight: 100 900;
-  src: local(Jost), url(../fonts/sans-serif/Jost-Italic-VariableFont_wght.ttf) format(truetype) tech(variations);
+  src: local(Jost), url(../fonts/Jost-Italic-VariableFont_wght.ttf) format(truetype) tech(variations);
 }
 
 :root {
