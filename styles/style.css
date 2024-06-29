@@ -27,7 +27,7 @@
     --alert__bg: hsl(42, 43.75%, 50%);
 
     --header__ff: Archivo, sans-serif;
-    --header__lh: 1.1892;
+    --header__lh: 1.272;
 
     --body__bg: hsl(240, 12.5%, 93.75%);
     --body__txt: hsl(240, 12.5%, 12.5%);
@@ -35,16 +35,16 @@
     --body__ln-hover: hsl(210, 96.875%, 56.25%);
     --body__ln-trs: 250ms ease-out;
     --body__ff: Jost, sans-serif;
-    --body__lh: 1.6818;
+    --body__lh: 1.618;
 
     --card__bg: #fff;
     --card__rs: 0.5rem;
     --card__sh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
 
     --h1: 2rem;
-    --h2: 1.4142rem;
-    --h3: 1.1892rem;
-    --s: 0.8409rem;
+    --h2: 1.5874rem;
+    --h3: 1.2599rem;
+    --s: 0.7937rem;
 }
 
 *,
@@ -98,8 +98,7 @@ alert {
     padding: 2rem 1rem;
 }
 
-h1,
-.h1 {
+h1 {
     font-family: var(--header__ff);
     font-size: var(--h1);
     font-weight: 700;
@@ -107,8 +106,7 @@ h1,
     line-height: var(--header__lh);
 }
 
-h2,
-.h2 {
+h2 {
     font-family: var(--header__ff);
     font-size: var(--h2);
     font-weight: 500;
@@ -116,8 +114,7 @@ h2,
     line-height: var(--header__lh);
 }
 
-h3,
-.h3 {
+h3 {
     font-family: var(--header__ff);
     font-size: var(--h3);
     font-weight: 500;
@@ -159,10 +156,6 @@ q {
 
 strong {
     font-weight: 700;
-}
-
-.uppercase {
-    text-transform: uppercase;
 }
 
 .center {
