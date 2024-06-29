@@ -1,35 +1,50 @@
+@font-face {
+  font-display: swap;
+  font-family: Archivo;
+  font-stretch: 62.5% 125%;
+  font-style: normal;
+  font-weight: 100 900;
+  src: local(Archivo), url(../fonts/sans-serif/Archivo-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 100 900;
+  src: local(Jost), url(../fonts/sans-serif/Jost-VariableFont_wght.ttf) format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Jost;
+  font-style: italic;
+  font-weight: 100 900;
+  src: local(Jost), url(../fonts/sans-serif/Jost-Italic-VariableFont_wght.ttf) format(truetype) tech(variations);
+}
+
 :root {
-    /* background-color */
-    --bgc__primary: hsl(240, 17.1875%, 95.3125%);
-    --bgc__secondary: #fff;
-    --bgc__alert: hsl(42, 43.75%, 50%);
+    --alert__bg: hsl(42, 43.75%, 50%);
 
-    /* border-color */
-    --bdc: hsl(234, 17.1875%, 84.375%);
+    --header__ff: Archivo, sans-serif;
+    --header__lh: 1.1892;
 
-    /* border-radius */
-    --bdrs: 0.5rem;
+    --body__bg: hsl(240, 12.5%, 93.75%);
+    --body__txt: hsl(240, 12.5%, 12.5%);
+    --body__ln: hsl(210, 96.875%, 43.75%);
+    --body__ln-hover: hsl(210, 96.875%, 56.25%);
+    --body__ln-trs: 250ms ease-out;
+    --body__ff: Jost, sans-serif;
+    --body__lh: 1.6818;
 
-    /* box-shadow */
-    --bxsh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+    --card__bg: #fff;
+    --card__rs: 0.5rem;
+    --card__sh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
 
-    /* color */
-    --c__primary: hsl(240, 17.1875%, 10.9375%);
-    --c__secondary: hsl(240, 17.1875%, 17.1875%);
-    --c__link: hsl(225, 84.375%, 46.875%);
-    --c__link-hover: hsl(225, 84.375%, 53.125%);
-
-    /* font-size */
-    --fz__h1: 2rem;
-    --fz__h2: 1.4142rem;
-    --fz__small: 0.7071rem;
-
-    /* line-height */
-    --lh__primary: 1.6818;
-    --lh__secondary: 1.1892;
-
-    /* transition */
-    --trs: 250ms ease-out;
+    --h1: 2rem;
+    --h2: 1.4142rem;
+    --h3: 1.1892rem;
+    --s: 0.8409rem;
 }
 
 *,
@@ -51,49 +66,63 @@ html {
 }
 
 body {
-    background-color: var(--bgc__primary);
-    color: var(--c__primary);
-    font: 400 1rem / var(--lh__primary) sans-serif;
+    background-color: var(--body__bg);
+    color: var(--body__txt);
+    font: 400 1rem / var(--body__lh) var(--body__ff);
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
 
 header,
+main,
 footer {
-    padding: 1rem;
+    padding: 0 0.5rem;
 }
 
 alert {
-    background-color: var(--bgc__alert);
+    background-color: var(--alert__bg);
     color: #fff;
     font-weight: 700;
     padding: 0.25rem 1rem;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1600px;
+    margin: 2rem auto;
+    max-width: 1152px;
 }
 
 .card {
-    background-color: var(--bgc__secondary);
-    border-radius: var(--bdrs);
-    box-shadow: var(--bxsh);
-    padding: 4rem 1rem;
+    background-color: var(--card__bg);
+    border-radius: var(--card__rs);
+    box-shadow: var(--card__sh);
+    padding: 2rem 1rem;
 }
 
-h1, .h1 {
-    font-size: var(--fz__h1);
+h1,
+.h1 {
+    font-family: var(--header__ff);
+    font-size: var(--h1);
     font-weight: 700;
-    line-height: var(--lh__secondary);
-    margin: 1rem 0;
+    letter-spacing: 0.0625rem;
+    line-height: var(--header__lh);
 }
 
-h2, .h2 {
-    font-size: var(--fz__h2);
+h2,
+.h2 {
+    font-family: var(--header__ff);
+    font-size: var(--h2);
     font-weight: 500;
-    line-height: var(--lh__secondary);
-    margin: 1rem 0;
+    letter-spacing: 0.0625rem;
+    line-height: var(--header__lh);
+}
+
+h3,
+.h3 {
+    font-family: var(--header__ff);
+    font-size: var(--h3);
+    font-weight: 500;
+    letter-spacing: 0.0625rem;
+    line-height: var(--header__lh);
 }
 
 p {
@@ -102,20 +131,20 @@ p {
 
 label,
 .small {
-    font-size: var(--fz__small);
+    font-size: var(--s);
 }
 
 a,
 a:any-link {
-    color: var(--c__link);
+    color: var(--body__ln);
     text-decoration: none;
-    transition: color var(--trs);
+    transition: color var(--body__ln-trs);
     user-select: all;
     overflow-wrap: break-word;
 }
 
 a:hover {
-    color: var(--c__link-hover);
+    color: var(--body__ln-hover);
 }
 
 ul {
@@ -140,5 +169,12 @@ strong {
     text-align: center;
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    header,
+    main,
+    footer {
+        padding: 0 1rem;
+    }
+}
+
 @media only screen and (min-width: 1152px) {}
