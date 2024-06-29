@@ -25,7 +25,7 @@
     --body__bg: hsl(240, 16%, 92%);
     --body__txt: hsl(240, 16%, 16%);
     --body__ln: hsl(210, 96%, 48%);
-    --body__ln-hover: hsl(210, 96%, 56%);
+    --body__ln-hover: hsl(210, 96%, 60%);
     --body__ln-trs: 250ms ease-out;
     --body__ff: "Open Sans", sans-serif;
     --body__lh: 1.618;
