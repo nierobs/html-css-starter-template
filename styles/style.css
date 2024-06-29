@@ -1,16 +1,25 @@
 @font-face {
   font-display: swap;
-  font-family: Archivo;
-  font-stretch: 62.5% 125%;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
   font-style: normal;
-  font-weight: 100 900;
-  src: local(Archivo), url(../fonts/Archivo-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+  font-weight: 300 800;
+  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
+  font-style: italic;
+  font-weight: 300 800;
+  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 :root {
     --alert__bg: hsl(42, 43.75%, 50%);
 
-    --header__ff: Archivo, sans-serif;
+    --header__ff: "Open Sans", sans-serif;
     --header__lh: 1.272;
 
     --body__bg: hsl(240, 12.5%, 93.75%);
@@ -18,7 +27,7 @@
     --body__ln: hsl(210, 96.875%, 43.75%);
     --body__ln-hover: hsl(210, 96.875%, 56.25%);
     --body__ln-trs: 250ms ease-out;
-    --body__ff: sans-serif;
+    --body__ff: "Open Sans", sans-serif;
     --body__lh: 1.618;
 
     --card__bg: #fff;
