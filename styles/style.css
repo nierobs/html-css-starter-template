@@ -17,22 +17,24 @@
 }
 
 :root {
-    --alert__bg: hsl(42, 43.75%, 50%);
+    --alert__bg: hsl(45, 48%, 48%);
 
     --header__ff: "Open Sans", sans-serif;
     --header__lh: 1.272;
 
-    --body__bg: hsl(240, 12.5%, 93.75%);
-    --body__txt: hsl(240, 12.5%, 12.5%);
-    --body__ln: hsl(210, 96.875%, 43.75%);
-    --body__ln-hover: hsl(210, 96.875%, 56.25%);
+    --body__bg: hsl(240, 16%, 92%);
+    --body__txt: hsl(240, 16%, 16%);
+    --body__ln: hsl(210, 96%, 48%);
+    --body__ln-hover: hsl(210, 96%, 56%);
     --body__ln-trs: 250ms ease-out;
     --body__ff: "Open Sans", sans-serif;
     --body__lh: 1.618;
 
     --card__bg: #fff;
     --card__rs: 0.5rem;
-    --card__sh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+    --card__sh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.08);
+
+    --border: hsl(240, 12%, 88%);
 
     --h1: 2rem;
     --h2: 1.5874rem;
@@ -66,17 +68,17 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+.alert {
+    background: var(--alert__bg);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
 header,
 main,
 footer {
     padding: 0 0.5rem;
-}
-
-alert {
-    background-color: var(--alert__bg);
-    color: #fff;
-    font-weight: 700;
-    padding: 0.25rem 1rem;
 }
 
 .container {
@@ -156,6 +158,10 @@ strong {
 }
 
 @media only screen and (min-width: 768px) {
+    .alert {
+        padding: 0.5rem 1rem;
+    }
+
     header,
     main,
     footer {
