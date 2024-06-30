@@ -1,0 +1,146 @@
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-weight: 300 800;
+  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+}
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
+  font-style: italic;
+  font-weight: 300 800;
+  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+}
+*,
+::after,
+::before {
+  border: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  height: 100%;
+}
+
+body {
+  background-color: hsl(240, 16%, 92%);
+  color: hsl(240, 16%, 16%);
+  font: 400 1rem / 1.618 "Open Sans", sans-serif;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.alert {
+  background: hsl(45, 48%, 48%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+header,
+main,
+footer {
+  padding: 0 0.5rem;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 1152px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.08);
+  padding: 2rem 0.5rem;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  line-height: 1.272;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5874rem;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  line-height: 1.272;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2599rem;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  line-height: 1.272;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+label,
+.small {
+  font-size: 0.7937rem;
+}
+
+a,
+a:any-link {
+  color: hsl(210, 96%, 48%);
+  text-decoration: none;
+  transition: color 250ms ease-out;
+  user-select: all;
+  overflow-wrap: break-word;
+}
+a:hover,
+a:any-link:hover {
+  color: hsl(210, 96%, 60%);
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .alert {
+    padding: 0.5rem 1rem;
+  }
+  header,
+  main,
+  footer {
+    padding: 0 1rem;
+  }
+  .card {
+    padding: 4rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

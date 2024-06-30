@@ -1,3 +1,29 @@
+@use "sass:string";
+
+$alert_background: hsl(45, 48%, 48%);
+$card_background: #fff;
+
+$header_font: "Open Sans", sans-serif;
+$header_line-height: 1.272;
+
+$background: hsl(240, 16%, 92%);
+$color: hsl(240, 16%, 16%);
+$font: "Open Sans", sans-serif;
+$line-height: 1.618;
+
+$h1: 2rem;
+$h2: 1.5874rem;
+$h3: 1.2599rem;
+$small: 0.7937rem;
+
+$a: hsl(210, 96%, 48%);
+$a_hover: hsl(210, 96%, 60%);
+$transition: 250ms ease-out;
+
+
+$border: hsl(240, 16%, 88%);
+$shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.08);
+
 @font-face {
   font-display: swap;
   font-family: "Open Sans";
@@ -14,32 +40,6 @@
   font-style: italic;
   font-weight: 300 800;
   src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
-}
-
-:root {
-    --alert__bg: hsl(45, 48%, 48%);
-
-    --header__ff: "Open Sans", sans-serif;
-    --header__lh: 1.272;
-
-    --body__bg: hsl(240, 16%, 92%);
-    --body__txt: hsl(240, 16%, 16%);
-    --body__ln: hsl(210, 96%, 48%);
-    --body__ln-hover: hsl(210, 96%, 60%);
-    --body__ln-trs: 250ms ease-out;
-    --body__ff: "Open Sans", sans-serif;
-    --body__lh: 1.618;
-
-    --card__bg: #fff;
-    --card__rs: 0.5rem;
-    --card__sh: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.08);
-
-    --border: hsl(240, 16%, 88%);
-
-    --h1: 2rem;
-    --h2: 1.5874rem;
-    --h3: 1.2599rem;
-    --s: 0.7937rem;
 }
 
 *,
@@ -61,15 +61,15 @@ html {
 }
 
 body {
-    background-color: var(--body__bg);
-    color: var(--body__txt);
-    font: 400 1rem / var(--body__lh) var(--body__ff);
+    background-color: $background;
+    color: $color;
+    font: 400 1rem string.unquote("/") $line-height $font;
     min-height: 100%;
     text-rendering: optimizeLegibility;
 }
 
 .alert {
-    background: var(--alert__bg);
+    background: $alert_background;
     color: #fff;
     font-weight: 700;
     padding: 0.5rem;
@@ -87,34 +87,34 @@ footer {
 }
 
 .card {
-    background-color: var(--card__bg);
-    border-radius: var(--card__rs);
-    box-shadow: var(--card__sh);
+    background-color: $card_background;
+    border-radius: 0.5rem;
+    box-shadow: $shadow;
     padding: 2rem 0.5rem;
 }
 
 h1 {
-    font-family: var(--header__ff);
-    font-size: var(--h1);
+    font-family: $header_font;
+    font-size: $h1;
     font-weight: 700;
     letter-spacing: 0.0625rem;
-    line-height: var(--header__lh);
+    line-height: $header_line-height;
 }
 
 h2 {
-    font-family: var(--header__ff);
-    font-size: var(--h2);
+    font-family: $header_font;
+    font-size: $h2;
     font-weight: 500;
     letter-spacing: 0.0625rem;
-    line-height: var(--header__lh);
+    line-height: $header_line-height;
 }
 
 h3 {
-    font-family: var(--header__ff);
-    font-size: var(--h3);
+    font-family: $header_font;
+    font-size: $h3;
     font-weight: 500;
     letter-spacing: 0.0625rem;
-    line-height: var(--header__lh);
+    line-height: $header_line-height;
 }
 
 p {
@@ -123,20 +123,20 @@ p {
 
 label,
 .small {
-    font-size: var(--s);
+    font-size: $small;
 }
 
 a,
 a:any-link {
-    color: var(--body__ln);
+    color: $a;
     text-decoration: none;
-    transition: color var(--body__ln-trs);
+    transition: color $transition;
     user-select: all;
     overflow-wrap: break-word;
-}
 
-a:hover {
-    color: var(--body__ln-hover);
+    &:hover {
+      color: $a_hover;
+    }
 }
 
 ul {
