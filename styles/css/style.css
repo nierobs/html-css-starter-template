@@ -4,7 +4,7 @@
   font-stretch: 75% 100%;
   font-style: normal;
   font-weight: 300 800;
-  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+  src: local(Open Sans), local(OpenSans), url(../../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 @font-face {
   font-display: swap;
@@ -12,7 +12,7 @@
   font-stretch: 75% 100%;
   font-style: italic;
   font-weight: 300 800;
-  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+  src: local(Open Sans), local(OpenSans), url(../../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 *,
 ::after,
